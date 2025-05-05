@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h2>Basic form</h2>
+        <fieldset>
+        <label for="first">Name:</label>
+        <input type="text"  id="first"  name="student_name" placeholder="Enter your name" required>
+        <!-- type = "text"  (creat rectangle box)-->
+         <!--in lable and input, for and id both has same name "first" help name click for blind people by easy click-->
+         <!-- Here name is actually server name where this data is transfer -->
+        <br>
+        <br>
+        <label for="second">age</label>
+        <input type="number" id="second" name="Age of student" required>
+        <br>
+        <br>
+        <button>Submit</button>
+        </fieldset>
+    </form>
+
+    <!-- practice question -->
+    <br><hr><hr>
+    <h2>Contact us</h2>
+    <form>
+        <fieldset>
+        <!-- <h1>Contact us</h1> -->
+         <legend>Contact us</legend>
+        <br>
+        <label for="txt">Name:</label>
+        <input type="text" id="txt" placeholder="Enter your name">
+        <br><br>
+
+        <label for="gml">Email:</label>
+        <input type="email" id="gml">
+        <br><br>
+
+        <label for="pn">Phone no:</label>
+        <input type="tel" id="pn">
+        <br><br>
+
+        <label for="pw">Password</label>
+        <input type="password" id="pw">
+        <br><br>
+        <lable for="msg">Message:</lable>
+        <textarea type="text" id="msg" rows="10" cols="20"></textarea>
+        <!-- textarea is to right message -->
+        <br><br>
+        <button>Submit</button>
+        </fieldset>
+    </form>
+
+    <br><hr><hr>
+    <h2>User registration</h2>
+
+    <form>
+        <fieldset>
+        <!-- <h1>User registration</h1> -->
+         <legend>User registration</legend>
+
+        <label for="TwX88">username:</label>
+        <input type="text" id="TwX88">
+        <br><br>
+
+        <label for="maihhf">Email:</label>
+        <input type="email" id="maihhf">
+        <br><br>
+
+        <label for="hukio">password:</label>
+        <input type="password" id="hukio">
+        <br><br>
+
+        <label for="gen">Gender</label>
+        <input type="radio" id="xy" name="Gender" value="male">
+        <label for="xy">male</label>
+        <input type="radio" id="xx" name="Gender" value="Female">
+        <label for="xx">female</label>
+        <br><br>
+
+        <input type="checkbox" id="cbo" >
+        <label  for="cbo" >I agree to term and condition</label>
+        <br>
+        <br>
+        <button>submit</button>
+        </fieldset>
+    </form>
+<br><br>
+         <h2>Feedback form</h2>
+    <form>
+        <fieldset>
+        <!-- <h1>Feedback form</h1> -->
+         <legend>Feedback form</legend>
+
+        <label for="nm">your name:</label>
+        <input type="text" id="nm">
+        <br><br>
+
+        <label for="ye">your email</label>
+        <input type="email" id="ye">
+        <br><br>
+
+        <label>Rate us</label>
+
+        <input type="radio" id="s" name="Rate">
+        <label for="s">1 star</label>
+        <input type="radio" id="t" name="Rate">
+        <label for="t">2 star</label>
+        <input type="radio" id="u" name="Rate">
+        <label for="u">3 star</label>
+        <input type="radio" id="v" name="Rate">
+        <label for="v">4 star</label>
+        <input type="radio" id="w" name="Rate">
+        <label for="w">5 star</label>
+
+        <br><br>
+
+        <label>Comment</label>
+        <textarea type="text"  rows="10" cols="20"></textarea>
+        <br><br>
+        <button>submit feedback</button>
+        </fieldset>
+    </form>
+
+    <br><br>
+
+    <h2>Employee detail form</h2>
+    <form>
+        <fieldset>
+        <!-- <h1>Employee detail form</h1> -->
+         <legend>Employee detail form</legend>
+
+        <label for="fne">Full Name</label>
+        <input type="text" id="fne">
+        <br><br>
+
+        <label for="eml">Email</label>
+        <input type="email" id="eml">
+        <br><br>
+
+        <label for="pno">phone number</label>
+        <input type="tel" id="pno">
+        <br><br>
+
+        <label>Gender</label>
+
+        <input type="radio" id="le" name="gender">
+        <lable for="le">Male</lable>
+
+        <input type="radio" id="fml" name="gender">
+        <label for="fml">Female</label>
+
+        <input type="radio" id="otr" name="gender">
+        <label for="otr">Other</label>
+
+        <br><br>
+
+        <label for="jt">job Title</label>
+        <input type="text" id="jt">
+        <br><br>
+
+        <label>Department:</label>
+        <select name="Department">
+            <option value="" disabled selected>select your Department </option>
+            <option value="cse">cse</option>
+            <option value="It">It</option>
+            <option value="AIML">AIML</option>
+            <option value="DS">DS</option>
+        </select>
+
+        <br><br>
+
+        <button>submit</button>
+        </fieldset>
+    </form>
+<br><br>
+
+          <h2>IIT JEE registration form</h2>
+    <form>
+        
+        <form action="Url_server">
+
+        <!-- <h2>IIT JEE registration form</h2> -->
+        <fieldset>
+            <legend>IIT JEE registration form</legend>
+
+            <fieldset>
+                <legend>user info</legend>
+
+        <label for="student_name">Name <span style="color: crimson;">*</span></label>
+        <input type="text" id="student_name" name="Name" required >
+
+        <br><br>
+
+        <label for="emle">Email <span style="color: crimson;">*</span></label>
+        <input type="email" id="emle" name="Email" required >
+
+        <br><br>
+
+        <label for="pne">Phone <span style="color: crimson;">*</span></label>
+        <input id="pne" type="tel" name="phone" required>
+
+        </fieldset>
+
+        <br><br>
+
+        <fieldset>
+            <legend>user other info</legend>
+
+        <label for="pwd">Password</label>
+        <input id="pwd" type="password" name="password" required>
+
+        <br><br>
+
+        <label>Gender</label>
+
+        <input type="radio" id="rdo" name="Gender">
+        <label for="rdo">Male</label>
+
+        <input type="radio" id="fmle" name="Gender">
+        <label for="fmle">Female</label>
+
+        <br><br>
+
+        <label for="dobb">Date of birth</label>
+        <input type="date" id="dobb" name="Date of birth" min="1-6-2001" max="1-6-2006">
+
+        <br><br>
+
+        <label for="sn">School name</label>
+        <input type="text" id="sn" name="School name">
+
+        <br><br>
+
+        <label>Board</label>
+        <select name="Board">
+            <option value="" disabled selected>select your board</option>
+            <option value="CBSE">CBSE</option>
+            <option value="Bihar board">Bihar board</option>
+            <option value="UP Board">UP Board</option>
+            <option value="ICSE">ICSE</option>
+        </select>
+
+        <br><br>
+
+        <label for="py">Year of passing</label>
+        <input id="py" type="number" min="2023" max="2025">
+
+        <br><br>
+
+        <label>Exam center</label>
+        <select>
+            <option disabled selected>Select your center</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Kolkata">Kolkata</option>
+            <option value="Hydrabad">Hydrabad</option>
+            <option value="Banglore">Banglore</option>
+        </select>
+
+        </fieldset>
+
+        <br><br>
+
+        <button>Register</button>
+        </fieldset>
+    </form>
+
+    <br><br><br>
+
+    <form>
+        <fieldset>
+
+    <h2>Heath Details form</h2>
+
+    <fieldset>
+        <legend>
+            Personal Information
+        </legend>
+
+        <label for="fln">Full Name</label>
+        <input type="text" id="fln" name="Full Name">
+<br><br>
+        <label for="dbo">Date of birth</label>
+        <input type="date" id="dbo" name="Date of birth">
+<br><br>
+        <label>Gender</label>        
+        <select>
+            <option disabled selected>Select your Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="other">other</option>
+        </select>
+<br><br>
+        <label for="pnbe">Phone Number</label>
+        <input type="tel" id="pnbe" name="Phone number">
+<br><br>
+                
+    </fieldset>
+
+    <fieldset>
+        <legend>Medical History</legend>
+
+        <label>Blood group</label>
+        <select>
+            <option disabled selected>select your blood group</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="O">O</option>
+        </select>
+<br><br>
+        <label>Do you wear Glasses or contact lenses</label>
+        <br>
+        <input  id="wg" type="radio" name="gc">
+        <label for="wg">Yes</label>
+
+        <input type="radio" id="lg" name="gc">
+        <label for="lg">No</label>
+<br><br>
+        <label for="ta">pre-existing-condition</label>
+        <textarea id="ta" type="text" row="5" cols="5" placeholder="list any pre existing medical condition"></textarea>
+<br><br>
+        <label for="all">Allergies</label>
+        <br>
+        <input type="checkbox" id="pollen" name="Allergies">
+        <label for="pollen">pollen</label>
+<br>
+        <input type="checkbox" id="peanuts" name="Allergies">
+        <label for="peanuts">peanuts</label>
+<br>
+        <input type="checkbox" id="Latex" name="Allergies">
+        <label for="Latex">Latex</label>
+<br>    
+        <input type="checkbox" id="None" name="Allergies">
+        <label for="None">None</label>
+<br><br>
+        <label for="cde">Current medicine</label>
+        <textarea id="cde" row="5" cols="5" placeholder="medicine name"></textarea>
+<br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Emergency contact</legend>
+
+        <label for="ecn">Emergency contact name</label>
+        <input  id="ecn" type="text" name="Emergency contact name">
+<br><br>
+        <label for="ecnb">Emergency contact number</label>
+        <input type="number" id="ecnb" name="Emergency contact number">
+<br><br>
+        <label for="rtec">Relationship to Emergency contact</label>
+        <input type="text" id="rtec" name="Relationship to Emergency contact">
+    </fieldset>
+<br>
+        <button>submit</button>
+    </fieldset>
+    </form>
+
+
+</body>
+</html>

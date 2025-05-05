@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Media</title>
+</head>
+<body>
+    <audio controls src="check.mp3" ></audio>
+                   <!-- or -->
+    <audio controls>
+        <source src="Jaadugar.mp3">
+    </audio>
+    <!-- In both ways controls are necessary to play audio file -->
+<br><br>
+
+    <audio controls>
+        <source src="Jaadugar.mp3">
+        <source src="check.mp3">
+         alternate song are also loading
+    </audio>
+    <!-- Advantage of second this method , we can also add alternate audio with main audio and also add line too-->
+
+<br><br>
+
+     <video controls src="WhatsApp Video 2024-09-11 at 07.59.15_e3ce5afb.mp4" height="500px"></video> <!--autoplay -->
+                              <!-- or -->
+     <video controls src="WhatsApp Video 2024-09-11 at 08.12.47_95e0410f.mp4" height="500px"></video> <!--autoplay muted -->
+
+<br><br>
+      <video controls height="500px"> <!--" autoplay muted " in this line add -->
+        <source src="WhatsApp Video 2024-09-11 at 07.59.15_e3ce5afb.mp4">
+        <source src="WhatsApp Video 2024-09-11 at 08.12.47_95e0410f.mp4">
+        video is not playing due to error
+    </video>  
+    
+    <!-- Now we play youtube videos -->
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_AuKZ3WdcU4?si=IyFUhuIIQMStDF2B" title="YouTube video player"  allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       <!-- the above is direct embed from youtube already allow fullscreen-->
+    <iframe src=https://www.youtube.com/embed/_AuKZ3WdcU4 allowfullscreen></iframe> 
+        <!-- this one is embed manually must add allowfullscreen -->
+
+    <iframe src="Akami_L7+L8.html"></iframe>
+
+<br><hr><hr><hr><br><br><br>
+    
+    <header >
+        <h1 style="text-align: center; position: fixed;">Learn DSA from Coder army</h1>
+        <nav>
+                
+            <ol>
+                <li><a href="#Introduction">C++ Introduction</a></li>
+                <li><a href="#Compiler">C++ Compiler</a></li>
+                <li><a href="#Array">Array</a></li>
+                <li><a href="#tree">Tree</a></li>
+                <li><a href="#graph">Graph</a></li>
+            </ol>
+            
+        </nav>
+    </header>
+    <main>
+
+        <section id="Introduction">
+        <h3>What is c++ ?</h3>
+        <p>C++ is a programming language used to create software. It's an object-oriented language that's often used to build large-scale applications.</p>
+        <pre style="background-color: aquamarine;">
+            <code>
+            #include &lt;iostream&gt; <!--   use &lt; for < and &gt; for >     -->
+ 
+                 int main() {
+                     std::cout &lt;&lt; "Hello World!" &lt;&lt; cout ;
+                     return 0;
+                 }
+            </code>     
+        </pre>
+        <pre>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim maiores laboriosam, voluptate quibusdam alias quaerat voluptates, repellendus asperiores ipsam in officiis eveniet voluptatum, non sint molestiae expedita eos. Fugiat, dolor.
+        </pre>
+        </section>
+
+        <section id="Compiler">
+        <h2>Online c++ compiler</h2>
+        <iframe src="https://www.programiz.com/cpp-programming/online-compiler/" title="Online c++ compiler" height="700px" width="100%"></iframe>
+        </section>
+<br><br>
+        <section id="Array">
+        <h2>Introduction to array</h2>
+        <h3>What is an array?</h3>
+        <p>An array is a collection of items, or data, arranged in rows and columns. It can be used to store multiple pieces of data of the same type together.</p>
+        <img src="data:image/png;base64,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" alt="what is array?" width="800px">
+        <h3>Characteristics of array</h3>
+        <ul>
+            <li>Each element in a character array is a single character, usually represented by the 'char' data type in programming languages. </li>
+            <li>Accessing characters within the array is done using an index number, starting from 0. </li>
+            <li>Character arrays are commonly used to represent strings in programming languages where there is no dedicated string data type, with the null terminator ('\0') signifying the end of the string.</li>
+            <li>Like most arrays, character arrays store their data in contiguous memory locations, allowing for efficient access to elements. </li>
+        </ul>
+<br><br>
+        <h3>Types of Arrays in Data Structure</h3>
+        <ul>
+            <li>One-Dimensional Arrays (1D Arrays) These are the simplest form of arrays, consisting of a single line of elements</li>
+            <ul>
+                <li>An array of integers with 5 elements can be declared and initialized as int numbers[5]</li>
+            </ul>
+            <li>Two-Dimensional Arrays (2D Arrays) A two-dimensional array in data structure, often thought of as a matrix, consists of rows and columns.</li>
+            <ul>
+                <li>an array that is organized in rows and columns.</li>
+            </ul>
+            <li>Multi-Dimensional Arrays.</li>
+        </ul>
+<br><br>
+        <h3>Tutorials of array</h3>
+        <table border="20">
+        <tr>
+            <td><iframe src="https://www.youtube.com/embed/moZNKL37w-s"  allowfullscreen></iframe></td>
+            <td><iframe src="https://www.youtube.com/embed/567332frcF0"  allowfullscreen></iframe></td>
+            <td><iframe src="https://www.youtube.com/embed/hUdqNPhXOh4"  allowfullscreen></iframe></td>
+        </tr>
+        <tr>
+            <td><iframe src="https://www.youtube.com/embed/9_B6TmAHveU"  allowfullscreen></iframe></td>
+            <td><iframe src="https://www.youtube.com/embed/V3vM_m2iFtk"  allowfullscreen></iframe></td>
+            <td><iframe src="https://www.youtube.com/embed/YpZUgiT1N94"  allowfullscreen></iframe></td>
+        </tr>
+        </table>
+        </section>
+
+<br><br>
+        <section id="tree"></section>
+        <h3>Tree</h3>
+<br>
+        <h4>what is Tree?</h4>
+<br>
+        <p>a tree is a non-linear hierarchical data structure that consists of nodes connected by edges</p>
+<br><br>
+        <h4>Key Points:</h4>
+<br>       
+        <ul>
+            <li>Nodes: Each node in the tree contains data and can have zero or more child nodes.</li>
+            <li>Edges: Edges represent the connections between nodes.</li>
+            <li>Root: The topmost node in the tree is called the root.</li>
+            <li>Parent: A node that directly connects to another node below it is called the parent node.</li>
+            <li>Child: A node that is directly connected to a node above it is called the child node</li>
+            <li>Leaf: A node that has no children is called a leaf node.</li>
+        </ul>
+<br><br>       
+        <h4>Common Types of Trees:</h4>
+        <ul>
+            <li>Binary Tree:</li>
+            <ul>
+                <li>A tree in which each node can have at most two children.</li>
+            </ul>
+            <li>Binary Search Tree (BST):</li>
+            <ul>
+                <li>A binary tree where the left child of a node contains values less than the node's value, and the right child contains values greater than the node's value.</li>
+            </ul>
+            <li>AVL Tree</li>
+            <ul>
+                <li>A self-balancing BST that maintains a height difference of at most 1 between its left and right subtrees.</li>
+            </ul>
+            <li>Red-Black Tree</li>
+            <li>
+                <li>Another type of self-balancing BST that maintains a specific set of rules to ensure balance</li>
+            </li>
+        </ul>
+<br><br>
+        <h3>Implementing Trees in C++:</h3>
+        <p>You can implement trees in C++ using classes and pointers. Here's a simple example of a binary tree node:C++</p>
+        <code>
+            <pre>
+            #include &lt;iostream&gt;
+
+                struct Node {
+                    int data;
+                    Node* left;
+                    Node* right;
+                
+                    Node(int val) : data(val), left(nullptr), right(nullptr) {}
+                };
+            </pre>
+        </code>
+<br><br>       
+     <h3>Applications of Trees</h3>
+     <ul>
+        <li>File systems:</li>
+        <ul>
+            <li>Trees can represent the hierarchical structure of a file system.</li>
+        </ul>
+        <li>Expression parsing:</li>
+        <ul>
+            <li> Trees can be used to represent and evaluate mathematical expressions.</li>
+        </ul>
+        <li>Search algorithms:</li>
+        <ul>
+            <li>Trees can be used to implement efficient search algorithms, such as binary search</li>
+        </ul>
+        <li>Decision trees:</li>
+        <ul>
+            <li>Trees can be used to model decision-making processes in machine learning.</li>
+        </ul>
+     </ul>
+<br><br>
+    <h3>Videos for tree</h3>
+    <tabel border="24">
+        <tr>
+            <td><iframe src="https://www.youtube.com/embed/_b0bfpO3b4I"  allowfullscreen></iframe></td>
+            <td><iframe src="https://www.youtube.com/embed/P30p5jYsiDc"  allowfullscreen></iframe></td>
+            <td><iframe src="https://www.youtube.com/embed/T78jHD4fNgc"  allowfullscreen></iframe></td>
+            <td><iframe src="https://www.youtube.com/embed/T78jHD4fNgc"  allowfullscreen></iframe></td>
+        </tr>
+        <tr>
+            <td><iframe src="https://www.youtube.com/embed/Sxb152a5Am8"  allowfullscreen></iframe></td>
+            <td><iframe src="https://www.youtube.com/embed/Sxb152a5Am8"  allowfullscreen></iframe></td>
+            <td><iframe src="https://www.youtube.com/embed/ytesTkCa3wk"  allowfullscreen></iframe></td>
+            <td><iframe src="https://www.youtube.com/embed/TvfGWVAv_cc"  allowfullscreen></iframe></td>
+        </tr>
+    </tabel>
+<br><br>
+     <section id="graph">
+    <h2>Graph</h2>
+    <h3>What is graph?</h3>
+    <p>a graph is a non-linear data structure that represents a collection of nodes (also called vertices) and edges that connect these nodes. Graphs are used to model relationships between objects, where the nodes represent the objects, and the edges represent the connections or associations between them.</p>
+    <h4>Components of a Graph:</h4>
+    <ul>
+        <li>Vertices:</li>
+        <ul>
+            <li>The fundamental units of a graph, representing objects or entities.</li>
+        </ul>
+        <li>Edges:</li>
+        <ul>
+            <li>The connections between vertices, representing relationships or associations.</li>
+        </ul>
+        <li>Weighted Graph:</li>
+        <ul>
+            <li>A graph where each edge has an associated weight or cost.</li>
+        </ul>
+    </ul>
+<br><br>
+    <h2>Representing Graphs in C++:</h2>
+<br>
+    <p>There are two common ways to represent graphs in C++:</p>
+<br>
+    <ul>
+        <li>Adjacency Matrix:</li>
+        <ul>
+            <li>A 2D array where the rows and columns represent the vertices. The value at matrix[i][j] indicates whether there is an edge between vertex i and vertex j.</li>
+        </ul>
+        <li>Adjacency List:</li>
+        <ul>
+            <li>An array of lists, where each list represents the neighbors of a particular vertex.</li>
+        </ul>
+    </ul>
+<br><br>
+    <code>
+        <pre>
+            #include &lt;iostream&gt;
+                #include &lt;vector&gt;
+                #include &lt;list&gt;
+                
+                using namespace std;
+                
+                class Graph {
+                private:
+                    int V; // Number of vertices
+                    vector<list<int>> adj; // Adjacency list
+                
+                public:
+                    Graph(int V) : V(V), adj(V) {} // Constructor
+                
+                    void addEdge(int u, int v) {
+                        adj[u].push_back(v); // Add v to u's list
+                        adj[v].push_back(u); // Add u to v's list (for undirected graph)
+                    }
+                
+                    void printGraph() {
+                        for (int i = 0; i < V; ++i) {
+                            cout << "Adjacency list of vertex " << i << ": ";
+                            for (auto it = adj[i].begin(); it != adj[i].end(); ++it) {
+                                cout << *it << " ";
+                            }
+                            cout << endl;
+                        }
+                    }
+                };
+                
+                int main() {
+                    // Create a graph with 5 vertices
+                    Graph g(5);
+                
+                    // Add edges
+                    g.addEdge(0, 1);
+                    g.addEdge(0, 4);
+                    g.addEdge(1, 2);
+                    g.addEdge(1, 3);
+                    g.addEdge(1, 4);
+                    g.addEdge(2, 3);
+                    g.addEdge(3, 4);
+                
+                    // Print the adjacency list representation
+                    g.printGraph();
+                
+                    return 0;
+                }
+        </pre>
+    </code>  
+<br><br>
+    <h3>Tutorial for Graph</h3>  
+<br>
+    <tabel border="30">
+        <tr>
+            <td><iframe src="https://www.youtube.com/embed/gGlfzqPT-hE" frameborder="0"></iframe></td>
+            <td><iframe src="https://www.youtube.com/embed/bxbrUGvBCnY" frameborder="0"></iframe></td>
+            <td><iframe src="https://www.youtube.com/embed/Vtu7qgF0ksw" frameborder="0"></iframe></td>
+            <td><iframe src="https://www.youtube.com/embed/oz1EaP_Bw4s" frameborder="0"></iframe></td>
+        </tr>
+        <tr>
+            <td><iframe src="https://www.youtube.com/embed/2JgYwQ6TZ44" frameborder="0"></iframe></td>
+            <td><iframe src="https://www.youtube.com/embed/sPlN86EpjJA" frameborder="0"></iframe></td>
+            <td><iframe src="https://www.youtube.com/embed/gSCidfLIVGc" frameborder="0"></iframe></td>
+            <td><iframe src="https://www.youtube.com/embed/XIaqB8-wAiQ" frameborder="0"></iframe></td>
+        </tr>
+        <tr>
+            <td><iframe src="https://www.youtube.com/embed/gLJmbAV74Bs" frameborder="0"></iframe></td>
+            <td><iframe src="https://www.youtube.com/embed/1pL11W_0H2g" frameborder="0"></iframe></td>
+            <td><iframe src="https://www.youtube.com/embed/1YoCOUBw1zU" frameborder="0"></iframe></td>
+            <td><iframe src="https://www.youtube.com/embed/lUXl7GnH9xk" frameborder="0"></iframe></td>
+        </tr>
+        <tr>
+            <td><iframe src="https://www.youtube.com/embed/6-O4MehzsaA" frameborder="0"></iframe></td>
+            <td><iframe src="https://www.youtube.com/embed/6DCnv6Q3iwk" frameborder="0"></iframe></td>
+            <td><iframe src="https://www.youtube.com/embed/h6o6kC5oG2A" frameborder="0"></iframe></td>
+            <td><iframe src="https://www.youtube.com/embed/Dwl45Q8xQt0" frameborder="0"></iframe></td>
+        </tr>
+    </tabel>
+    </section>
+    </main>
+    <footer style="text-align: center;">
+        &#169 Page made by Rahul Kumar Shaw
+    </footer>
+</body>
+</html>
